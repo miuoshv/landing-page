@@ -4,75 +4,110 @@
 }
 body {
     background-color: #1f2937;
-    height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    
+    
 }
 
-/* 1st container */
 
-.first-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
+/* TOP */
 
 .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    width: 1200px;
-    padding: 8px 0;
+    padding: 12px 50px;
 }
 
 .top-right {
     display: flex;
+    font-size: 25px;
+    color: #e5e7eb;
     gap: 16px;
 }
 
 .top-left {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 55px;
     color: #f9faf8;
 }
 
 
+/* 1st container */
 
-.fc-bottom-boxes {
-    border: 1px solid white;
+
+.first-container {
     display: flex;
-    justify-content: space-between;
-    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -85px;
+    
+    
+    
+    
+}
+
+.fc-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    width: 100%;
     align-items: center;
     color: white;
-    width: 1200px;
+    
+    
     
 }
 
 .fc-left-box {
-   width: 350px;
+   width: 300px;
+   height: 450px;
+   
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 72px;
     font-weight: 900;
+    
+}
+
+.fc-bottom-text {
+    font-size: 24px;
 }
 
 
 .fc-right-box {
-    border: 1px solid black;
-    width: 350px;
-    height: 150px;
-    background-color: #4b4f57;
+    
+    width: 800px;
+    height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    
+
+    
+}
+
+.macbook > img {
+    height: auto;
+    width: 800px;
+    border-radius: 125px 25px;
+}
+
+.fc-button {
+    color: white;
+    background-color: #3882f6;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 10px 0;
+    border: none;
 }
 
 
@@ -85,20 +120,21 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 1px black solid;
-    height: 400px;
+    height: 800px;
 }
 
 h2 {
-    font-weight: 700;
-    margin: 0px 0px 25px;
+    font-weight: 900;
+    font-size: 64px;
+    color: #1f2937;
+    margin-bottom: 100px;
 }
 
 .sc-bottom-boxes {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px
+    gap: 40px
 }
 
 .sc-cont {
@@ -109,16 +145,17 @@ h2 {
 }
 
 .sc-box {
-    width: 110px;
-    height: 110px;
-    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    border: solid 3px #3882f6;
     border-radius: 10%;
+    margin-bottom: 20px;
 }
 
 .sc-text-box {
     text-align: center;
-    font-size: 12px;
-    width: 100px;
+    font-size: 24px;
+    width: 300px;
 }
 
 /* 3rd container */
@@ -128,18 +165,25 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 200px;
-    border: 1px solid black;
+    height: 500px;
     background-color: #e5e7eb;
 }
 
 .tc-top-box {
-    width: 500px;
-    font-size: 20px;
+    width: 900px;
+    font-weight: 100px;
+    font-size: 55px;
+    font-style: italic;
 }
 
 .tc-bottom-box {
-    margin: 0 0 0 340px;
+    width: 900px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+
 }
 
 /* 4d container */
@@ -148,23 +192,57 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 170px;
+    height: 400px;
     background-color: white;
 }
 
 .blue-box {
-    width: 600px;
+    width: 900px;
     padding: 20px 30px;
-    border: black solid 1px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #3882f6;
+    gap: 16px;
+    padding: 30px 70px;
+    border-radius: 10px;
 }
+
+.foc-top-box {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 0.5px;
+    font-weight: 900;
+}
+
+.foc-bottom-box {
+    font-size: 25px;
+    color: #e5e7eb;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.foc-button {
+    background-color: white;
+    color: #3882f6;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 5px 40px;
+    margin: 10px 0;
+    border: none;
+}
+
+
+
+/* footer */
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    font-weight: 600;
+    font-size: 24px;
+    height: 80px;
 }
